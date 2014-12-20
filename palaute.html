@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="HTML Tidy for Linux (vers 6 November 2007), see www.w3.org" />
+<style type="text/css">
+div.otsikko
+{
+
+padding-left:50px;
+border:30px solid darkcyan;
+margin:10px;
+}
+
+
+div.logo
+ {
+float:right;
+width:400px;
+}
+
+img {
+margin-left:10px;
+margin-right:10px;
+}
+
+div.copyright
+{
+text-align:center;
+color:#333333;
+}
+
+a:link{
+color:blue;
+text-decoration:none;
+}
+a:visited{
+color:orange;
+}
+a:hover{
+color:green;
+}
+a:active{
+color:red;
+}
+
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19453943-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<title>JavaGalaksi</title>
+<body bgcolor="floralwhite">
+
+<div class="otsikko"><img src="otsikko.png" width="90%"/></div>
+
+<a href="http://koti.mbnet.fi/kiiso">
+<img src = "etusivuikoni.png" alt="Etusivulle"/>
+</a>
+
+<a href="http://koti.mbnet.fi/kiiso/java.html">
+<img src = "javaikoni.png" alt="Javasta"/>
+</a>
+
+<a href="http://koti.mbnet.fi/kiiso/ohjelmia.html">
+<img src = "ohjelmaikoni.png" alt="Ohjelmia"/>
+</a>
+
+<a href="http://koti.mbnet.fi/kiiso/projektit.html">
+<img src = "projektiikoni.png" alt="Koodausprojekteja"/>
+</a>
+
+<a href="http://koti.mbnet.fi/kiiso/muutkielet.html">
+<img src = "kieliikoni.png" alt="Muita kieliä esim. Pythonia"/>
+</a>
+
+<a href="http://koti.mbnet.fi/kiiso/kulttuuri.html">
+<img src = "kulttuuriikoni.png" alt="Kulttuuria"/>
+</a>
+
+<a href="http://koti.mbnet.fi/kiiso/muuta.html">
+<img src = "muuikoni.png" alt="Muuta kivaa"/>
+</a>
+
+<a href="http://koti.mbnet.fi/kiiso/palaute.html">
+<img src = "palautehover.png" alt="Palaute"/>
+</a>
+
+<br />
+<br />
+
+
+<table class="http://www.geeky-gadgets.com/wp-content/uploads/2009/04/computer-mailbox.jpg" align="right">
+<caption align="bottom">Palautteesi sujahtaa 100 megan nopeudella ylläpitäjän postilaatikkoon. -Tai sitten ei.</caption>
+<tr>
+<td>
+<img src="http://www.geeky-gadgets.com/wp-content/uploads/2009/04/computer-mailbox.jpg" width="400" title="Ylläpitäjän über postilaatikko" />
+</td>
+</tr>
+</table>
+
+
+<br />
+
+
+<table>
+<tr>
+<td>
+<form method="post" action="sendeail.php">
+
+<!-- DO NOT change ANY of the php sections -->
+<?php
+$ipi = getenv("REMOTE_ADDR");
+$httprefi = getenv ("HTTP_REFERER");
+$httpagenti = getenv ("HTTP_USER_AGENT");
+?>
+
+<input type="hidden" name="ip" value="<?php echo $ipi ?>" />
+<input type="hidden" name="httpref" value="<?php echo $httprefi ?>" />
+<input type="hidden" name="httpagent" value="<?php echo $httpagenti ?>" />
+
+
+Nimimerkki: <br />
+<input type="text" name="visitor" size="35" />
+<br />
+Sähköpostiosoitteesi:<br />
+<input type="text" name="visitormail" size="35" />
+<br /> <br />
+<br />
+Palaute alueesta:<br />
+<select name="attn" size="1">
+<option value=" Koko sivusto ">Koko sivusto </option> 
+<option value=" Etusivu ">Etusivu </option> 
+<option value=" Java ">Java </option> 
+<option value=" Ohjelmat ">Ohjelmat </option> 
+<option value=" Projektit ">Projektit </option> 
+<option value=" Muut kielet ">Muut kielet </option>
+<option value=" Kulttuuri ">Kulttuuri </option> 
+<option value=" Muuta ">Muuta </option> 
+<option value=" Palaute ">Palaute </option> 
+</select>
+<br /><br />
+Palaute:
+<br />
+<textarea name="notes" rows="4" cols="40"></textarea>
+<br />
+<input type="submit" value="Lähetä" />
+<br />
+</form>
+</td>
+</tr>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="copyright">
+
+<p><font face="MS Sans Serif" size="1">© Aapo Kiiso 2011</font></p>
+
+</body>
+</html>
